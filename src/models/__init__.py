@@ -1,2 +1,2 @@
-from .articulos_models import Articulos
+from .articulos_models import Articulos, Autor
 

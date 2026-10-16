@@ -1,13 +1,13 @@
 from fastapi import FastAPI, HTTPException, Body, Path, Query
 from typing import Annotated
-from database import Base, engine
+from database import SQLModel, engine
 from models import Articulos
 from pydantic import BaseModel, Field
 from routers.articulos import libros_routers
 from fastapi.middleware.cors import CORSMiddleware
 
 
-Base.metadata.create_all(bind=engine)
+#SQLModel.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
